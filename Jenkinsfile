@@ -19,7 +19,7 @@ pipeline {
 			}
 		}
 	}
-	post (
+	post {
 		always {
 			echo 'I am awesome. I run always'
 		}
@@ -29,7 +29,7 @@ pipeline {
 		failure {
 			echo 'I run on failure'
 		}
-	)
+	}
 }
 
 //SCRIPTED
