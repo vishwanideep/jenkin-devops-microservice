@@ -6,13 +6,14 @@ pipeline {
 	stages{
 		stage('Build') {
 			steps{
-				sh 'mvn --version'
+				//sh 'mvn --version'
 				echo "Build"
 				echo "PATH - $PATH"
 				echo "BUILD_NUMBER - $env.BUILD_NUMBER"
 				echo "BUILD_ID - $env.BUILD_ID"
-				echo "BUILD_JOB - $env.BUILD_JOB"
+				echo "BUILD_JOB - $env.JOB_NAME"
 				echo "BUILD_URL - $env.BUILD_URL"
+				echo "BUILD_TAG - $env.BUILD_TAG"
 			}
 		}
 				stage('Test') {
