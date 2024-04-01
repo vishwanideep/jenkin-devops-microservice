@@ -22,7 +22,7 @@ pipeline {
 				echo "BUILD_TAG - $env.BUILD_TAG"
 			}
 		}
-		stage('Complie') {
+		stage('Compile') {
 			steps{
 				sh "mvn clean compile"
 			}
